@@ -1,0 +1,96 @@
+body {
+	background: linear-gradient(to bottom, #ADD8E6, #FFFFFF);
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background: linear-gradient(to bottom, #FF0000, #ADD8E6);
+	text-align: center;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0;
+	color: white;
+}
+
+h2 {
+	text-align: center;
+}
+
+section {
+	margin: 20px auto;
+	max-width: 600px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+table {
+	margin: auto;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+ul {
+	margin: auto;
+	text-align: center;
+	list-style-position: inside;
+	padding-left: 0;
+}
+
+li {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+form {
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	background-color: #ADD8E6;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #87CEFA;
+}
+
+input {
+	border: 1px solid black;
+	padding: 5px;
+}

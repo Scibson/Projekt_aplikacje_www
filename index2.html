@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strona HTML</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header>
+		<h1>Strona HTML</h1>
+	</header>
+
+	<section>
+		<h2>Lista</h2>
+		<ul>
+			<li>Pierwszy element</li>
+			<li>Drugi element</li>
+			<li>Trzeci element</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Tabela</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Imię</th>
+					<th>Nazwisko</th>
+					<th>Numer albumu</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Michał</td>
+					<td>Ścibek</td>
+					<td>17395</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section>
+		<h2>Formularz</h2>
+		<form action="formularz.php" method="post" enctype="multipart/form-data">	
+			<label for="imie">Imię:</label><br>
+			<input type="text" name="imie" id="imie" required><br>
+
+			<label for="nazwisko">Nazwisko:</label><br>
+			<input type="text" name="nazwisko" id="nazwisko" required><br>
+
+			<label for="email">Email:</label><br>
+			<input type="email" name="email" id="email" required><br>
+
+			<input type="submit" value="Wyślij">
+		</form>
+	</section>
+	
+	<section>
+		<h2>Bieżąca data i godzina:</h2>
+    	<p id="currentDateTime"></p>
+	</section>
+	<script>
+      function updateDateTime() {
+        var now = new Date();
+        var date = now.toLocaleDateString();
+        var time = now.toLocaleTimeString();
+        var dateTimeString = date + ' ' + time;
+        document.getElementById('currentDateTime').innerHTML = dateTimeString;
+      }
+
+      setInterval(updateDateTime, 1000);
+    </script>
+</body>
+</html>
